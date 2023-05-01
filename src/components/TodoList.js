@@ -74,7 +74,7 @@ const TodoList = () => {
         onChange={(e) => setInput(e.target.value)}
       />
       {/* 할 일을 추가하는 버튼입니다. */}
-      <div class="grid">
+      <div className="grid">
         <button
           // className={styles.addButton}
           // -- addButton CSS code --
@@ -91,7 +91,12 @@ const TodoList = () => {
           //   background-color: #fff;
           //   color: #0070f3;
           // }
-          className="w-40 justify-self-end p-1 mb-4 bg-blue-500 text-white border border-blue-500 rounded hover:bg-white hover:text-blue-500"
+          className={`w-40
+                      justify-self-end
+                      p-1 mb-4
+                    bg-blue-500 text-white
+                      border border-blue-500 rounded
+                    hover:bg-white hover:text-blue-500`}
           onClick={addTodo}
         >
           Add Todo
